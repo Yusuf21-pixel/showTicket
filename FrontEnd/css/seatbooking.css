@@ -1,0 +1,230 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    background:ghostwhite;
+    color: rgb(140, 140, 140);
+    margin:0;
+}
+.header{
+    margin-top: -20px;
+    padding: 14px 16px;
+    background: #1f2533;
+    color: ghostwhite;
+    position: fixed;
+    width: 100%;
+    line-height: 1.5;
+}
+.timings{
+  position: fixed;
+  width: 100%;
+  padding: 14px 14px;
+  top: 60px;
+  background-color:aliceblue;
+  line-height: 1.7;
+}
+.time{
+    border: 1px solid  #2dc492;
+    background: #131721;
+    color: white;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.fa{
+    font-size: 25px;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+p{
+    color:rgb(140, 140, 140);
+    /* background-color: white;
+    display: inline-block; */
+}
+.rowbox{
+    display: inline-block;  
+    border:1px solid green ;
+    padding: 4px 9px; 
+    border-radius: 3px;
+    color: green;
+    background-color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.rowbox:hover{
+    cursor: pointer;
+    color: white;
+    background-color:#131721;
+}
+
+.rowbox2{
+    display: inline-block;  
+    border:1px solid green ;
+    padding: 4px 5px; 
+    border-radius: 2px;
+    color: green;
+    background-color: white;
+    font-size: 12px;
+}
+
+.rowbox2:hover{
+    cursor: pointer;
+    color: white;
+    background-color:#131721;
+}
+.selecte{
+    cursor: pointer;
+    color: white;
+    background-color:green;
+}
+
+.lounge{
+    margin-left: 90px;
+    margin-bottom: auto;
+}
+
+.secondcol{
+    margin-left: 80px;
+    margin-bottom: auto;
+}
+
+
+.thirdcol{
+    margin-left: 110px;
+    margin-bottom: auto;
+}
+
+
+.secondcol2{
+    margin-left: 50px;
+    margin-bottom: auto;
+}
+
+.thirdcol2{
+    margin-left: 50px;
+    margin-bottom: auto;
+}
+.colF{
+    margin-left: 297px;
+    margin-bottom: auto;
+}
+
+.colG{
+    margin-left: 297px;
+    margin-bottom: auto;
+}
+.colI{
+    margin-left: 5px;
+    margin-bottom: auto;
+}
+.available{
+    display: inline-block;  
+    border:1px solid green ;
+    padding: 10px 10px; 
+    border-radius: 3px;
+    background-color: white;
+    margin-left: 30px;
+}
+.selected{
+    display: inline-block;  
+    border:1px solid green ;
+    padding: 10px 10px; 
+    border-radius: 3px;
+    background-color: green;
+    margin-left: 30px;
+}
+
+.sold{
+    display: inline-block;  
+    padding: 11px 11px; 
+    border-radius: 3px;
+    background-color: lightgray;
+    margin-left: 400px;
+}
+.last{
+    padding: 8px;
+    width:100%;
+    position:fixed;
+    bottom: 2px;
+    background-color: white;
+    color: black;
+}
+.soldword, .availableword, .selectedword{
+    color:black;
+    margin-left: 10px;
+}
+.bdy{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.lastrow2col{
+    margin-left: 80px;
+}
+
+.lastrow3col{
+    margin-left: 78px;
+}
+.colM{
+    margin-left: 85px;
+}
+.date1{
+    margin-left: 13px;
+}
+
+.time:hover {
+    cursor:pointer;
+    opacity:0.8;
+    color:white;
+}
+
+.book-last {
+    text-decoration: none;
+    padding:4px 20px;
+    border:none;
+    outline:none;
+    background-color: #18232A;
+    position: absolute; 
+    max-width: 400px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.3rem; 
+    margin-left: 80%;
+    top:33%;
+}
+
+.book-last:hover {
+   opacity: 0.8;
+   cursor: pointer;
+}
+
+.hid{
+    display : none ;
+
+}
+.show{
+     display : block ;
+}
+
+.mail {
+    position: absolute;
+    padding: 5px;
+    width:300px;
+    top:33%;
+    left: 55%;
+    border-radius: 5px;
+    outline:none;
+}
+
+.mail:hover {
+    border:2px solid #18232A;
+}
+
+input[type="email"]::placeholder {
+    color:black;
+    font-size: 1.0rem;
+}

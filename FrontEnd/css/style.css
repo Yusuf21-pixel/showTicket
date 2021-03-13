@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+.head-container {
+    margin: 0;
+    width:100%;
+    height:15%;
+    position: relative;
+    background-color: #131721;
+    padding:5px;
+}
+
+div > h2 + input[type=text] {
+    border-radius: 4px;
+    border:none;
+    outline:none;
+    padding:0.4rem;
+    font-size: 1.2rem;
+    width:30%;
+    position:absolute;
+    top:17%;
+    left:19%;
+}
+
+div.head-container > div > h2 {
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    color:#F0F8FF;
+    position: relative;
+    left:2%;
+    letter-spacing: 1.5px;
+}
+
+div > h2 + input[type=text]:hover {
+    width:40%;
+}
+
+.dropDown-list {
+   position: absolute;
+   left:70%;
+   top:9%;
+}
+
+label[for=city] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.8rem;
+    color:#F0F8FF;
+}
+
+select { 
+    outline: 0; 
+    background-color: #DEB887; 
+    width: 230px; 
+    height: 35px; 
+    color: black; 
+    cursor: pointer; 
+    border-radius:5px; 
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 4px;
+} 
+
+select:hover {
+    border: 3px solid white;
+    outline: none;
+}
+
+.img {
+    height:480px;
+    margin-left: 40px;
+    margin-top:20px;
+    border-radius: 5px;
+}
+
+.image-display {
+    position: relative;
+    background-color: black;
+    padding:20px 20px 10px 20px;
+    overflow: hidden;
+}
+
+.previous-next {
+    padding:15px;
+    border-radius: 4px;
+    border:none;
+    outline:none;
+    color:white;
+    position: absolute;
+    bottom:40%;
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+.previous-next:hover {
+  outline:1px solid grey;
+}
+
+.previous {
+    left:2%;
+}
+
+.next {
+    right:2%;
+}
+
+.first-image{
+    margin-left: 80px;
+}
+
+.lang {
+    padding:10px 20px;
+    border:none;
+    outline :none;
+    border-radius: 30px;
+    background-color: #131721;
+    color: white;
+    position:relative; 
+    left:35%;
+    width:100px;
+    font-size: 1rem;
+}
+
+.eng {
+   left: 40%;
+}
+
+.hin {
+    left: 45%;
+}
+
+.lang:hover {
+   opacity:0.8;
+   cursor:pointer;
+}
+
+.category {
+    background-color: #ECE9E9;
+    width:100%;
+    position: relative;
+    padding:10px;
+}
+
+img[alt="KFN"] , img[alt="MCW"] {
+    width:320px;
+}
+
+.lang-img {
+    height:400px;
+    margin-left: 40px;
+    margin-top:20px;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+
+div.name-like > a > img[alt="KFN"] , div.name-like > a > img[alt="MCW"]{
+    width:268px;
+}
+
+.lang-image-container {
+   padding-left: 150px;
+   padding-bottom: 60px;
+   overflow: hidden;
+}
+
+.name-like {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s all ease-in-out;
+}
+
+.name-like:hover{
+    transform: scale(1.1);
+}
+
+.mov-name {
+  font-size: 1.7rem;
+  font-family: 'Krona One', sans-serif;
+  font-weight: bolder;
+}
+
+.mov-type{
+    font-size: 1.5rem;
+    margin-top: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.likes {
+    font-size: 1.2rem;
+    margin-top: 4px;
+    color:red;
+}
+
+.img-down {
+    margin-left: 40px;
+}
+
+.tp {
+    margin-top: 45px;
+}
+
+.poin:hover {
+   cursor:pointer; 
+}
+
+.fh {
+    width:42%;
+    background-color: grey;
+    margin-left : 35px;
+}
+
+.fh-top {
+    position: relative;
+    top:16px;
+}
+
+.term {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.3rem; 
+    padding-left: 20px;
+    padding-right: 20px;
+    position:relative;
+    color:white;
+    margin-left: 44%;
+}
+
+
+.terms-conditions {
+    background-color: #131721;
+    overflow: hidden;
+}
+
+.fh-bottom {
+    position: relative;
+    left:53%;
+    bottom: 14px;
+}
+
+.start-term{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.social {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #585B4B;
+    color: #131721;
+    margin-left: 8px;
+}
+
+.social-media {
+    position:relative;
+    left:37.5%;
+    top:15px;
+}
+
+.social:hover {
+    background-color: blanchedalmond;
+}
+
+.fl , .sl  {
+    font-size: 0.9rem;
+    color:#7E8171;
+    font-family: 'Shippori Mincho B1', serif;
+    padding:2px;
+}
+
+.fl {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+
+.sl {
+    text-align: justify;
+    text-justify: inter-word;
+}

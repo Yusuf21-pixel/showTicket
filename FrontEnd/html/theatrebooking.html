@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/theatrebooking.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body onload = "loadDetails()">
+    <div class="head-container">
+        <div class="logo-search">
+            <a href = "../html/bookTicket.html" class="previous-page">&#8249;</a>
+           <h2>ShowTicket</h2>
+        </div>
+     </div>
+     <div class="secondheader">
+         <h1 class="movName"></h1>
+         <span class="Ulogo">U</span>
+         <i class="fa fa-heart" style="color: #B92D2D;font-size: 20px;"></i>
+         <span class="lik"><b style="font-size: 25px;"></b></span>
+         <p class="movietype"></p>
+         <span id = "date"></span>
+         <span class="duration"><i class="fa fa-clock-o"> </i><span class="tim"> 2hrs 05mins</span></span>
+     </div>
+     <div class="dates" id="navbar">
+        <a href = "javascript:void(0)" id="d1" class = "day"></a>
+        <a href = "javascript:void(0)"  class = "day"></a>
+        <a href = "javascript:void(0)"  class = "day"></a>
+        <a href = "javascript:void(0)"  class = "day"></a>
+        <a href = "javascript:void(0)"  class = "day"></a>
+        <a href = "javascript:void(0)"  class = "day"></a>
+    </div>
+    <br>
+    <div class="contents">
+        <div class="facilities"  id = "hide">
+        <i class="fa fa-ticket" id="icon1"></i><span> M-Ticket Available</span>
+        <i class="fa fa-glass" id="icon2"></i><span> Food & Beverages Available</span>
+        <button onclick = "myfunc()" class="clsbtn"><span>&times;</span></button>
+        </div>
+        <br>
+        <div class="theatres">
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t1">GK Cinemas RGB: Porur</span>
+                <br>
+                <button onclick="bseat('t1')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t2">INOX National: Arcot Road</span>
+                <br>
+                <button onclick="bseat('t2')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span>F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t3">AGS Cinemas: Maduravoyal</span>
+                <br>
+                <button onclick="bseat('t3')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B  </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t4">Cinepolis: BSR Mall, OMR, Thoraipakkam</span>
+                <br>
+                <button onclick="bseat('t4')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t5">INOX: The Marina Mall, OMR</span>
+                <br>
+                <button onclick="bseat('t5')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B  </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t6">Luxe Cinemas: Chennai</span>
+                <br>
+                <button onclick="bseat('t6')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t7">PVR: VR Chennai, Anna Nagar</span>
+                <br>
+                <button onclick="bseat('t7')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t8">SRK Cinemas A/c Dts: Chengalpattu</span>
+                <br>
+                <button onclick="bseat('t8')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t9">Woodlands Complex: Chennai</span>
+                <br>
+                <button onclick="bseat('t9')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t10">PVR: Grand Mall, Velachery</span>
+                <br>
+                <button onclick="bseat('t10')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+            <div class="name1">
+                <i class="fa fa-heart" id = "heart"></i>
+                <span id = "t11">SPI: Palazzo-The Forum Vijaya Mall, Vadapalani</span>
+                <br>
+                <button onclick="bseat('t11')" class="bookbtn"><a href="../html/seatbooking.html" class="bt">Book Seat</a></button><br>
+                <span  class="prices">
+                    <span>Lounge--Rs.110 </span>
+                </span>
+                <i class="fa fa-ticket" id="ticketavailable"><span> M-Ticket</span></i>
+                <i class="fa fa-glass" id="foodavailable"><span> F&B </span></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id = "Terms" class="terms">
+        <div id = "TermsContents" class="terms_contents">
+          <span class="close">&times;</span>
+          <h3>Terms & Conditions</h3>
+          <p>Please read these important terms and conditions for the Internet Booking:</p>
+          <p>1. A customer under the influence of alcohol will not be allowed inside the cinema.</p>
+          <p>2. Outside food is not allowed.</p>
+          <p>3. Smoking is strictly prohibited inside the premises.</p>
+          <p>4. A separate ticket is required for children of or above the age of 3.</p>
+          <p>5. Ticket price inclusive of 3D glass charges.</p>
+          <p>6. People are not allowed inside the Auditorium after 30
+               mins from commencement of the movie.</p>
+          <p>7.Audience wearing lungi are not allowed inside the cinema.</p>
+         </div>
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="../javascript/theatreBooking.js"></script>
+</body>
+</html>
