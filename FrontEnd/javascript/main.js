@@ -6,18 +6,19 @@ $(".time").removeClass("selecte")
 $("#def").addClass("selecte")
 sessionStorage.setItem("time" , "02:45 PM")
 sessionStorage.setItem("seat" , 10)
+
 for(var i = 0 ; i < document.querySelectorAll(".rowbox").length ; i++){
 document.querySelectorAll(".rowbox")[i].addEventListener("click" , function(){
    if(this.classList[1] == "selecte"){
       this.classList.toggle("selecte") ;
           count-- ;       
       }
-     else if(sessionStorage.getItem("seat") >= count ){
+     else if(sessionStorage.getItem("seat") > count ){
         this.classList.add("selecte") ;
         count++ ;
      }
      else{
-      alert("Maximum 11 seats are allowed to book by one user")
+      alert("Maximum 10 seats are allowed to book by one user")
    }
    if(count >= 1){
       $("#fr").addClass("show")
