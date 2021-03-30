@@ -17,7 +17,7 @@ document.querySelectorAll(".rowbox")[i].addEventListener("click" , function(){
         count++ ;
      }
      else{
-      alert("Maximum 10 seats are allowed to book by one user")
+      alert("Maximum 11 seats are allowed to book by one user")
    }
    if(count >= 1){
       $("#fr").addClass("show")
@@ -36,7 +36,7 @@ for( i = 0 ; i < document.querySelectorAll(".rowbox2").length ; i++){
          this.classList.toggle("selecte") ;
              count-- ;       
          }
-        else if(sessionStorage.getItem("seat") >= count ){
+        else if(sessionStorage.getItem("seat") > count ){
          console.log(this.classList)
            this.classList.add("selecte") ;
            count++ ;

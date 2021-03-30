@@ -1,5 +1,4 @@
-
-var Email = "revathyu10@gmail.com"
+var Email = "yusufdon001@gmail.com"
 var movName = "teddy"
 var st = "11:30am"
 var dt = "14/03/2021"
@@ -14,6 +13,7 @@ var js = {
    theatre : theatreName,
    seat : totSeats
 }
+
 function sending() {
     var data = $.ajax({
         url : "http://localhost:8080/user/register" ,
@@ -25,6 +25,3 @@ function sending() {
         }
 });
 }
-
-
-
